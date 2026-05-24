@@ -39,3 +39,18 @@ log-archive /home/user/app/logs
 ## Output
 
 Archives are saved to `~/log_archives/` with the naming format:
+
+
+Activity log is saved at `~/log_archives/archive_activity.log`
+
+## Schedule with Cron (Optional)
+
+```bash
+# Run daily at midnight
+crontab -e
+# Add: 0 0 * * * /usr/local/bin/log-archive /var/log
+```
+
+## Project Page
+https://roadmap.sh/projects/log-archive-tool
+
